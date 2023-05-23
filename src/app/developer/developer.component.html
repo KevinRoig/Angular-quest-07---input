@@ -1,0 +1,33 @@
+<section>
+<ul>
+    <li>
+            <label for="lastName">Lastname : </label>
+    <p>{{developer.lastName}}</p>
+    </li>
+    <li>
+        <label for="firstName">FirstName : </label>
+        <p>{{developer.firstName}}</p>
+    </li>
+    <li>
+        <label for="age">Age : </label>
+        <p>{{developer.age}}</p>
+    </li>
+    <li>
+        <label for="gender">Gender : </label>
+        <p>{{developer.gender}}</p>
+    </li>
+    <li>
+        <label for="bio">Bio : </label>
+        <p>{{developer.bio}}</p>
+    </li>
+</ul>
+
+
+</section>
+<app-skill
+*ngFor="let skills of skillList"
+[name]="skills.name"
+[logo]="skills.logo"
+[site]="skills.site"
+>
+</app-skill>
