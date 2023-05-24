@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 import { Developer } from '../models/developer.model';
+import { Skill } from '../models/skill.model';
 
 @Component({
   selector: 'app-skill',
@@ -8,10 +9,8 @@ import { Developer } from '../models/developer.model';
   styleUrls: ['./skill.component.css']
 })
 export class SkillComponent implements OnInit {
-  @Input() name: string = "";
-  @Input() logo: string = "";
-  @Input() site: string = "";
-  
+  @Input() skill?: Skill;
+
   constructor() { }
   ngOnInit(): void { }
 }
